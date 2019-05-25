@@ -10,7 +10,7 @@ for i in range(1,len(rawlist)):
     match_pron=re.search(r'<pronunciation>(.*)</pronunciation>',rawlist[i],re.M|re.I)
     match_parts=re.search(r'<parts_of_speech>(.*)</parts_of_speech>',rawlist[i],re.M|re.I)
     match_chs=re.search(r'<chinese>(.*)</chinese>',rawlist[i],re.M|re.I)
-    datalist.append([match_word.group()[15:-10],match_pron.group()[23:-18],match_parts.group()[17:-18],match_chs.group()[18:-13]])
+    datalist.append([match_word.group()[15:-10],match_pron.group()[24:-19],match_parts.group()[17:-18],match_chs.group()[18:-13]])
 print(datalist)
 xlsname='D:/vocabulary.xls'
 linecount=0
